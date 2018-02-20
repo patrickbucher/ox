@@ -29,10 +29,10 @@ func main() {
 		fmt.Fprintf(os.Stderr, "GET %s: %v\n", searchURL, err)
 		os.Exit(1)
 	}
+	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
 		fmt.Fprintf(os.Stderr, "GET %s: %s\n", searchURL, resp.Status)
 		os.Exit(1)
 	}
-	defer resp.Body.Close()
 	io.Copy(os.Stdout, resp.Body)
 }
