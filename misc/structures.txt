@@ -1,0 +1,13 @@
+dict:
+
+results
+    lexicalEntries
+        entries
+            senses
+                definitions
+                examples
+                    text
+                subsenses
+                    definitions
+                    examples
+                        text

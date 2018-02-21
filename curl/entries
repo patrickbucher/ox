@@ -1,0 +1,1 @@
+curl -H "$(cat header.txt)" https://od-api.oxforddictionaries.com/api/v1/entries/en/$1
