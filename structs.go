@@ -10,7 +10,8 @@ type Result struct {
 }
 
 type LexicalEntry struct {
-	Entries []Entry `json:"entries"`
+	Entries  []Entry `json:"entries"`
+	Category string  `json:"lexicalCategory"`
 }
 
 type Entry struct {
