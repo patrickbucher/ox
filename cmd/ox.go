@@ -33,8 +33,13 @@ func main() {
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
-		fmt.Fprintf(os.Stderr, "GET %s: %s\n", searchURL, resp.Status)
-		os.Exit(1)
+		if resp.StatusCode == http.StatusNotFound {
+			fmt.Fprintf(os.Stderr, "'%s' was not found\n", wordId)
+			os.Exit(0)
+		} else {
+			fmt.Fprintf(os.Stderr, "GET %s: %s\n", searchURL, resp.Status)
+			os.Exit(1)
+		}
 	}
 	buf := bytes.NewBufferString("")
 	io.Copy(buf, resp.Body)

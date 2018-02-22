@@ -16,7 +16,7 @@ type LexicalEntry struct {
 
 type Entry struct {
 	Etymologies []string  `json:"etymologies"`
-	Grammatics  []Feature `json:"grammaticalFeatures"`
+	Grammar     []Feature `json:"grammaticalFeatures"`
 	Senses      []Sense   `json:"senses"`
 }
 
