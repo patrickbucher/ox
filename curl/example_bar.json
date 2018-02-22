@@ -1,0 +1,521 @@
+{
+    "metadata": {
+        "provider": "Oxford University Press"
+    },
+    "results": [
+        {
+            "id": "bar",
+            "language": "en",
+            "lexicalEntries": [
+                {
+                    "entries": [
+                        {
+                            "etymologies": [
+                                "Middle English: from Old French barre (noun), barrer (verb), of unknown origin"
+                            ],
+                            "grammaticalFeatures": [
+                                {
+                                    "text": "Singular",
+                                    "type": "Number"
+                                }
+                            ],
+                            "homographNumber": "100",
+                            "senses": [
+                                {
+                                    "definitions": [
+                                        "a long rigid piece of wood, metal, or similar material, typically used as an obstruction, fastening, or weapon"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "bars on the windows"
+                                        },
+                                        {
+                                            "text": "an iron bar"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.007",
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "an amount of food or another substance formed into a narrow block"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a bar of chocolate"
+                                                },
+                                                {
+                                                    "text": "gold bars"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.010"
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a band of colour or light"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "bars of sunlight shafting through the windows"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.011"
+                                        },
+                                        {
+                                            "definitions": [
+                                                "the heating element of an electric fire."
+                                            ],
+                                            "id": "m_en_gbus0072320.012",
+                                            "regions": [
+                                                "British"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "the crossbar of a goal"
+                                            ],
+                                            "domains": [
+                                                "Soccer"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "Clark's shot hit the bar"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.013",
+                                            "notes": [
+                                                {
+                                                    "text": "\"the bar\"",
+                                                    "type": "wordFormNote"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a metal strip below the clasp of a medal, awarded as an additional distinction"
+                                            ],
+                                            "domains": [
+                                                "Honour"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "he was awarded a second bar to his DSO"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.015",
+                                            "regions": [
+                                                "British"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a sandbank or shoal at the mouth of a harbour or an estuary"
+                                            ],
+                                            "domains": [
+                                                "Geology"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the bar to the estuary of the River Eske"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.016"
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a charge in the form of a narrow horizontal stripe across the shield."
+                                            ],
+                                            "domains": [
+                                                "Heraldry"
+                                            ],
+                                            "id": "m_en_gbus0072320.017"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "a counter in a pub, restaurant, or cafe across which drinks or refreshments are served"
+                                    ],
+                                    "domains": [
+                                        "Alcoholic"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "standing at the bar"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.019",
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "a room in a pub, restaurant, or hotel in which alcohol is served"
+                                            ],
+                                            "domains": [
+                                                "Alcoholic"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the oak-panelled bar of the Lion"
+                                                },
+                                                {
+                                                    "text": "bar stools"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.020"
+                                        },
+                                        {
+                                            "definitions": [
+                                                "an establishment where alcohol and sometimes other refreshments are served"
+                                            ],
+                                            "domains": [
+                                                "Alcoholic"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a small friendly bar open all day"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.021"
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a small shop, stall, or area in a department store that serves refreshments or provides a specified service"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a sandwich bar"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.022",
+                                            "notes": [
+                                                {
+                                                    "text": "with modifier",
+                                                    "type": "grammaticalNote"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "a barrier or restriction to an action or advance"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "political differences are not necessarily a bar to a good relationship"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.024",
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "a plea suspending an action or claim in a lawsuit."
+                                            ],
+                                            "domains": [
+                                                "Law"
+                                            ],
+                                            "id": "m_en_gbus0072320.025"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "any of the short sections or measures, typically of equal time value, into which a piece of music is divided, shown on a score by vertical lines across the stave"
+                                    ],
+                                    "domains": [
+                                        "Music"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "the opening bars of the first hymn"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.027"
+                                },
+                                {
+                                    "definitions": [
+                                        "a partition in a court room, now usually notional, beyond which most people may not pass and at which an accused person stands"
+                                    ],
+                                    "domains": [
+                                        "Law"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "the prisoner at the bar"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.030",
+                                    "notes": [
+                                        {
+                                            "text": "\"the bar\"",
+                                            "type": "wordFormNote"
+                                        }
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "a rail marking the end of each chamber in the Houses of Parliament"
+                                            ],
+                                            "domains": [
+                                                "Parliament"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "he had to appear at the Bar of the House for a reprimand by the Speaker"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.031",
+                                            "regions": [
+                                                "British"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "the profession of barrister"
+                                    ],
+                                    "domains": [
+                                        "Law"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "his dismissal from the Singapore Bar"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.033",
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "barristers collectively."
+                                            ],
+                                            "domains": [
+                                                "Law"
+                                            ],
+                                            "id": "m_en_gbus0072320.036",
+                                            "regions": [
+                                                "British"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "lawyers collectively."
+                                            ],
+                                            "domains": [
+                                                "Law"
+                                            ],
+                                            "id": "m_en_gbus0072320.037",
+                                            "regions": [
+                                                "North American"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a particular court of law."
+                                            ],
+                                            "domains": [
+                                                "Law"
+                                            ],
+                                            "id": "m_en_gbus0072320.038"
+                                        }
+                                    ],
+                                    "variantForms": [
+                                        {
+                                            "text": "the Bar"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "etymologies": [
+                                "early 20th century: from Greek baros ‘weight’"
+                            ],
+                            "grammaticalFeatures": [
+                                {
+                                    "text": "Singular",
+                                    "type": "Number"
+                                }
+                            ],
+                            "homographNumber": "400",
+                            "senses": [
+                                {
+                                    "definitions": [
+                                        "a unit of pressure equivalent to a hundred thousand newtons per square metre or approximately one atmosphere."
+                                    ],
+                                    "domains": [
+                                        "Measure",
+                                        "Meteorology"
+                                    ],
+                                    "id": "m_en_gbus0072330.005"
+                                }
+                            ]
+                        }
+                    ],
+                    "language": "en",
+                    "lexicalCategory": "Noun",
+                    "pronunciations": [
+                        {
+                            "audioFile": "http://audio.oxforddictionaries.com/en/mp3/bar_gb_1.mp3",
+                            "dialects": [
+                                "British English"
+                            ],
+                            "phoneticNotation": "IPA",
+                            "phoneticSpelling": "bɑː"
+                        }
+                    ],
+                    "text": "bar"
+                },
+                {
+                    "entries": [
+                        {
+                            "grammaticalFeatures": [
+                                {
+                                    "text": "Transitive",
+                                    "type": "Subcategorization"
+                                },
+                                {
+                                    "text": "Present",
+                                    "type": "Tense"
+                                }
+                            ],
+                            "homographNumber": "101",
+                            "senses": [
+                                {
+                                    "definitions": [
+                                        "fasten (something, especially a door or window) with a bar or bars"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "she bolted and barred the door"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.043"
+                                },
+                                {
+                                    "definitions": [
+                                        "prevent or prohibit (someone) from doing something or from going somewhere"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "journalists had been barred from covering the elections"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.050",
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "forbid someone from undertaking (an activity)"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the job she loved had been barred to her"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.051"
+                                        },
+                                        {
+                                            "definitions": [
+                                                "exclude (something) from consideration"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "nothing is barred in the crime novel"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0072320.052"
+                                        },
+                                        {
+                                            "definitions": [
+                                                "prevent or delay (an action) by objection."
+                                            ],
+                                            "domains": [
+                                                "Law"
+                                            ],
+                                            "id": "m_en_gbus0072320.053"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "mark (something) with bars or stripes"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "his face was barred with light"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.055"
+                                }
+                            ]
+                        }
+                    ],
+                    "language": "en",
+                    "lexicalCategory": "Verb",
+                    "pronunciations": [
+                        {
+                            "audioFile": "http://audio.oxforddictionaries.com/en/mp3/bar_gb_1.mp3",
+                            "dialects": [
+                                "British English"
+                            ],
+                            "phoneticNotation": "IPA",
+                            "phoneticSpelling": "bɑː"
+                        }
+                    ],
+                    "text": "bar"
+                },
+                {
+                    "entries": [
+                        {
+                            "homographNumber": "102",
+                            "senses": [
+                                {
+                                    "definitions": [
+                                        "except for"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "his kids were all gone now, bar one"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0072320.057",
+                                    "regions": [
+                                        "British"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "except the horses indicated (used when stating the odds)."
+                                            ],
+                                            "domains": [
+                                                "Racing"
+                                            ],
+                                            "id": "m_en_gbus0072320.059",
+                                            "regions": [
+                                                "British"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "language": "en",
+                    "lexicalCategory": "Preposition",
+                    "pronunciations": [
+                        {
+                            "audioFile": "http://audio.oxforddictionaries.com/en/mp3/bar_gb_1.mp3",
+                            "dialects": [
+                                "British English"
+                            ],
+                            "phoneticNotation": "IPA",
+                            "phoneticSpelling": "bɑː"
+                        }
+                    ],
+                    "text": "bar"
+                }
+            ],
+            "type": "headword",
+            "word": "bar"
+        }
+    ]
+}

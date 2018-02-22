@@ -1,12 +1,12 @@
 package ox
 
-type EntryRespones struct {
-	Results Result `json:"results"`
+type EntryResponse struct {
+	Results []Result `json:"results"`
 }
 
 type Result struct {
 	Id             string         `json:"id"`
-	LexicalEntries []LexicalEntry `json:"lexicalEntry"`
+	LexicalEntries []LexicalEntry `json:"lexicalEntries"`
 }
 
 type LexicalEntry struct {
@@ -17,7 +17,7 @@ type LexicalEntry struct {
 type Entry struct {
 	Etymologies []string  `json:"etymologies"`
 	Grammatics  []Feature `json:"grammaticalFeatures"`
-	Senses      Sense     `json:"senses"`
+	Senses      []Sense   `json:"senses"`
 }
 
 type Feature struct {

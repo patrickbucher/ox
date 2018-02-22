@@ -1,6 +1,8 @@
 package main
 
 import (
+	"bytes"
+	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
@@ -34,5 +36,13 @@ func main() {
 		fmt.Fprintf(os.Stderr, "GET %s: %s\n", searchURL, resp.Status)
 		os.Exit(1)
 	}
-	io.Copy(os.Stdout, resp.Body)
+	buf := bytes.NewBufferString("")
+	io.Copy(buf, resp.Body)
+	var result ox.EntryResponse
+	err = json.Unmarshal(buf.Bytes(), &result)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "unmarshal: %v\n", err)
+		os.Exit(1)
+	}
+	fmt.Printf("%v\n", result)
 }
