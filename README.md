@@ -2,6 +2,22 @@
 
 Go CLI for the Oxford Dictionary API
 
+**NOTE: The Oxford Dictionary does support far less languages then I thought. So contrary to the initial plan, the tool will primarly serve as an English Dictionary**
+
+## Usage (*currently implemented*)
+
+Look up the word "beer" in the English dictionary:
+
+`ox -lang en beer`
+
+English is the default language, so you can just type:
+
+`ox beer`
+
+Look up the word "trabajo" in the Spanish dictionary:
+
+`ox -lang es trabajo`
+
 ## Usage (*to be implemented*)
 
 ### Dictionary Lookup

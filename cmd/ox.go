@@ -23,7 +23,6 @@ func main() {
 	wordId := url.QueryEscape(args[0])
 	searchURL := fmt.Sprintf("%s/entries/%s/%s",
 		ox.APIBaseURL, *lang, wordId)
-	fmt.Println(searchURL)
 	req, err := http.NewRequest("GET", searchURL, nil)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "create request: %v\n", err)
