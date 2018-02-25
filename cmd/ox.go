@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"flag"
 	"fmt"
 	"io"
 	"net/http"
@@ -12,12 +13,17 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 2 {
-		fmt.Fprintf(os.Stderr, "usage: %s [word]")
+	lang := flag.String("lang", "en", "Lookup Language")
+	flag.Parse()
+	args := flag.Args()
+	if len(args) < 1 {
+		fmt.Fprintf(os.Stderr, "usage: ox [word]\n")
 		os.Exit(1)
 	}
-	wordId := url.QueryEscape(os.Args[1])
-	searchURL := ox.APIBaseURL + "/entries/en/" + wordId
+	wordId := url.QueryEscape(args[0])
+	searchURL := fmt.Sprintf("%s/entries/%s/%s",
+		ox.APIBaseURL, *lang, wordId)
+	fmt.Println(searchURL)
 	req, err := http.NewRequest("GET", searchURL, nil)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "create request: %v\n", err)
