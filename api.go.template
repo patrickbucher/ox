@@ -1,0 +1,7 @@
+package ox
+
+const (
+	APIBaseURL     = "https://od-api.oxforddictionaries.com/api/v1"
+	ApplicationId  = "your app_id"  // TODO
+	ApplicationKey = "your app_key" // TODO
+)
