@@ -49,5 +49,5 @@ func main() {
 		fmt.Fprintf(os.Stderr, "unmarshal: %v\n", err)
 		os.Exit(1)
 	}
-	fmt.Printf("%v\n", result)
+	fmt.Printf("%s\n", result.String())
 }
