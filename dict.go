@@ -26,9 +26,9 @@ type Result struct {
 func (r *Result) String() string {
 	buf := bytes.NewBufferString("")
 	buf.WriteString(r.Id)
-	buf.WriteRune('\n')
+	buf.WriteString("\n\n")
 	for i, v := range r.LexicalEntries {
-		buf.WriteString(fmt.Sprintf("%d. Entry: %s", i+1, v.String()))
+		buf.WriteString(fmt.Sprintf("%d. Entry: %s\n\n", i+1, v.String()))
 	}
 	return strings.TrimSpace(buf.String())
 }
@@ -41,45 +41,31 @@ type LexicalEntry struct {
 func (le *LexicalEntry) String() string {
 	buf := bytes.NewBufferString("")
 	buf.WriteString(le.Category)
-	buf.WriteRune(' ')
+	buf.WriteRune('\n')
 	for _, entry := range le.Entries {
 		buf.WriteString(entry.String())
 	}
-	buf.WriteString("\n\n")
 	return buf.String()
 }
 
 type Entry struct {
-	Etymologies []string  `json:"etymologies"`
-	Grammar     []Feature `json:"grammaticalFeatures"`
-	Senses      []Sense   `json:"senses"`
+	Etymologies []string `json:"etymologies"`
+	Senses      []Sense  `json:"senses"`
 }
 
 func (e *Entry) String() string {
 	buf := bytes.NewBufferString("")
-	if len(e.Grammar) > 0 {
-		var grammar []string
-		for _, feature := range e.Grammar {
-			grammar = append(grammar, feature.String())
-		}
-		buf.WriteRune('(')
-		buf.WriteString(strings.Join(grammar, ", "))
-		buf.WriteRune(')')
-		buf.WriteRune('\n')
-	}
 	if len(e.Senses) > 0 {
-		buf.WriteString("Senses:\n")
+		buf.WriteString("\nSenses:\n")
 		for i, v := range e.Senses {
-			buf.WriteString(fmt.Sprintf("%c) %s", i+'A', v.String()))
+			buf.WriteString(fmt.Sprintf("%c) %s\n", i+'A', v.String()))
 		}
-		buf.WriteRune('\n')
 	}
 	if len(e.Etymologies) > 0 {
-		buf.WriteString("Etymologies:\n")
+		buf.WriteString("\nEtymologies:\n")
 		for i, v := range e.Etymologies {
-			buf.WriteString(fmt.Sprintf("%c) %s", i+'A', v))
+			buf.WriteString(fmt.Sprintf("%c) %s\n", i+'A', v))
 		}
-		buf.WriteRune('\n')
 	}
 	return buf.String()
 }
@@ -100,8 +86,15 @@ type Sense struct {
 }
 
 func (s *Sense) String() string {
-	// TODO: s.Subsenses
-	return senseString(s.Definitions, s.Examples)
+	buf := bytes.NewBufferString("")
+	if len(s.Subsenses) > 0 {
+		for _, v := range s.Subsenses {
+			buf.WriteString(senseString(v.Definitions, v.Examples))
+			buf.WriteString("; ")
+		}
+	}
+	buf.WriteString(senseString(s.Definitions, s.Examples))
+	return buf.String()
 }
 
 type Example struct {
@@ -124,7 +117,6 @@ func (s *Subsense) String() string {
 func senseString(definitions []string, examples []Example) string {
 	buf := bytes.NewBufferString("")
 	if len(definitions) > 0 {
-		// buf.WriteString("Meaning: ")
 		buf.WriteString(strings.Join(definitions, "; "))
 	}
 	if len(examples) > 0 {
@@ -135,7 +127,6 @@ func senseString(definitions []string, examples []Example) string {
 		}
 		buf.WriteString(strings.Join(exampleStrings, "; "))
 		buf.WriteRune(')')
-		buf.WriteRune('\n')
 	}
 	return buf.String()
 }
