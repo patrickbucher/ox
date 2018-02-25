@@ -27,8 +27,8 @@ func (r *Result) String() string {
 	buf := bytes.NewBufferString("")
 	buf.WriteString(r.Id)
 	buf.WriteRune('\n')
-	for i, lexicalEntry := range r.LexicalEntries {
-		buf.WriteString(fmt.Sprintf("%d. %s", i+1, lexicalEntry.String()))
+	for i, v := range r.LexicalEntries {
+		buf.WriteString(fmt.Sprintf("%d. Entry: %s", i+1, v.String()))
 	}
 	return strings.TrimSpace(buf.String())
 }
@@ -45,6 +45,7 @@ func (le *LexicalEntry) String() string {
 	for _, entry := range le.Entries {
 		buf.WriteString(entry.String())
 	}
+	buf.WriteString("\n\n")
 	return buf.String()
 }
 
@@ -66,17 +67,17 @@ func (e *Entry) String() string {
 		buf.WriteRune(')')
 		buf.WriteRune('\n')
 	}
-	if len(e.Etymologies) > 0 {
-		buf.WriteString("Etymologies:\n")
-		for i, v := range e.Etymologies {
-			buf.WriteString(fmt.Sprintf("%d. %s", i+1, v))
-		}
-		buf.WriteRune('\n')
-	}
 	if len(e.Senses) > 0 {
 		buf.WriteString("Senses:\n")
 		for i, v := range e.Senses {
-			buf.WriteString(fmt.Sprintf("%d. %s", i+1, v.String()))
+			buf.WriteString(fmt.Sprintf("%c) %s", i+'A', v.String()))
+		}
+		buf.WriteRune('\n')
+	}
+	if len(e.Etymologies) > 0 {
+		buf.WriteString("Etymologies:\n")
+		for i, v := range e.Etymologies {
+			buf.WriteString(fmt.Sprintf("%c) %s", i+'A', v))
 		}
 		buf.WriteRune('\n')
 	}
@@ -123,8 +124,8 @@ func (s *Subsense) String() string {
 func senseString(definitions []string, examples []Example) string {
 	buf := bytes.NewBufferString("")
 	if len(definitions) > 0 {
-		buf.WriteString("Meaning: ")
-		buf.WriteString(strings.Join(definitions, ";"))
+		// buf.WriteString("Meaning: ")
+		buf.WriteString(strings.Join(definitions, "; "))
 	}
 	if len(examples) > 0 {
 		var exampleStrings []string
@@ -132,7 +133,7 @@ func senseString(definitions []string, examples []Example) string {
 		for _, v := range examples {
 			exampleStrings = append(exampleStrings, v.String())
 		}
-		buf.WriteString(strings.Join(exampleStrings, ";"))
+		buf.WriteString(strings.Join(exampleStrings, "; "))
 		buf.WriteRune(')')
 		buf.WriteRune('\n')
 	}
